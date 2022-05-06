@@ -1,0 +1,19 @@
+<header class="stick-top header">
+  <nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand gatito" [routerLink]="['']"> Gatito Book </a>
+    <div *ngIf="user$ | async as user">
+      <div *ngIf="user.name; else login">
+        <div class="usuario">
+          <i class="fa fa-user-circle mr-1 icon"></i>
+          <a class="mr-1 user">{{ user.name }}</a>
+        </div>
+        <a class="logout btn btn-outline-danger" (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+  <ng-template #login>
+    <span class="navbar-text ">
+      <a class="login btn btn-outline-success" [routerLink]="['']">Login</a>
+    </span>
+  </ng-template>
+</header>

@@ -1,0 +1,37 @@
+header{
+  margin: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.logout{
+  cursor: pointer;
+  margin-right: 5px;
+}
+.login{
+  cursor: pointer;
+  margin-right: 5px;
+}
+.icon{
+  margin: 5px;
+  color: aliceblue;
+}
+a{
+  text-decoration: none;
+  font-size: 18px;
+}
+.user{
+  color: white;
+}
+.usuario{
+  margin-right: 5px;
+}
+.gatito:hover{
+  color: aliceblue;
+}
+.gatito{
+  color: aliceblue;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 28px;
+}

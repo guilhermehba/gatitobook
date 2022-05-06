@@ -1,3 +1,4 @@
+import { CabecalhoModule } from './../componentes/cabecalho/cabecalho.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -16,6 +17,7 @@ import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
     FormsModule,
     MensagemModule,
     ReactiveFormsModule,
+    CabecalhoModule
   ],
   exports: [HomeComponent],
 })
