@@ -8,6 +8,7 @@ header{
   cursor: pointer;
   margin-right: 5px;
 }
+
 .login{
   cursor: pointer;
   margin-right: 5px;
@@ -34,4 +35,9 @@ a{
   margin-left: 10px;
   font-weight: 600;
   font-size: 28px;
+}
+.link-menu{
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 20px;
 }

@@ -1,6 +1,15 @@
 <header class="stick-top header">
   <nav class="navbar navbar-light bg-dark">
-    <a class="navbar-brand gatito" [routerLink]="['']"> Gatito Book </a>
+    <a class="navbar-brand gatito" [routerLink]="['']">
+      <i class="fa fa-bars mr-2" (click)="menu.abreMenu()" (keyup.space)="menu.abreMenu()"></i>
+      Gatito Book
+      </a>
+    <app-menu #menu>
+      <ul class="list-unstyled">
+        <a class="link-menu" [routerLink]="['animais', 'novo']">Novo Animal</a>
+
+      </ul>
+    </app-menu >
     <div *ngIf="user$ | async as user">
       <div *ngIf="user.name; else login">
         <div class="usuario">
@@ -10,9 +19,10 @@
         <a class="logout btn btn-outline-danger" (click)="logout()">Logout</a>
       </div>
     </div>
+
   </nav>
   <ng-template #login>
-    <span class="navbar-text ">
+    <span class="navbar-text">
       <a class="login btn btn-outline-success" [routerLink]="['']">Login</a>
     </span>
   </ng-template>
